@@ -1,0 +1,454 @@
+*{
+
+    margin : 0px;
+    padding: 0px;
+
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #4E4E4F; /* Blue color */
+    height: 80px;
+    padding: 0 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li {
+    padding: 20px;
+    position: relative;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    color: #ecf0f1; /* Lighter shade of white on hover */
+}
+
+.menu ul li ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    background-color: #4E4E4F; /* Blue color for dropdown */
+    padding: 10px;
+    border: 1px solid #4E4E4F; /* Darker shade of blue for border */
+    border-radius: 5px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.menu ul li:hover ul {
+    display: block;
+}
+
+.menu ul li:hover > ul {
+    display: block;
+}
+
+.menu ul li ul li ul {
+    display: none !important;
+}
+
+.menu ul li ul li:hover ul {
+    display: block !important;
+    left: 100%;
+    top: 0;
+}
+
+.login-signup {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background-color: #93CAEE; /* Green color */
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login-signup:hover {
+    background-color: #E6F2FF; /* Darker shade of green on hover */
+}
+
+
+.main{
+
+    background-color: #F4F4F4;
+
+}
+
+.text{
+
+    border: 2px solid black;
+    height : 500px;
+    width  : 750px;
+  
+
+}
+
+.txt{
+
+    margin-top: 200px;
+    text-align: center;
+  
+
+}
+
+#btn{
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#btn button{
+
+    height :  40px;
+    width : 150px;
+
+}
+
+.list{
+
+    
+    height: 400px;
+    width: auto;
+    background-color: #93CAEE;
+    margin-top: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   
+
+}
+
+.list .txt{
+
+    margin: 100px;
+    padding: 100px;
+    text-align: center;
+    margin : 10px;
+
+}
+
+
+
+/* 
+.list ul {
+    word-spacing: 3px;
+    padding: 0;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-evenly;
+    
+} */
+
+.list ul li {
+    margin: 0;
+}
+
+ul .l1{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-evenly;
+}
+
+.list ul .l1 .l2 .l3 {
+    margin: 0;
+}
+
+.lis{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.li{
+
+    margin-bottom: 20px;
+
+}
+
+.lis ul{
+    width: 200px;
+}
+
+.lbdr{
+
+    /* border: 2px solid; */
+    height: 500px;
+    width: 40%;
+    margin-top: 5%;
+    background-color: #E6F2FF;
+    border-radius: 10%;
+    margin-bottom: 5%;
+    background-color: #93CAEE;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.rbdr{
+
+    border : 2px;
+    height : 500px;
+    width : 40%;
+    background-image: url("images/healing_journey.png");
+    background-size: cover;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 10% ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+
+}
+
+.limg{
+
+    
+    height : 40%;
+    width : auto;     
+    display : flex;
+    justify-content: space-evenly;
+    
+
+}
+
+.lbdr h2{
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+
+}
+
+.lbdr h3{
+
+    text-align: center;
+
+}
+
+/* .btn{
+
+    margin-top: 20px;
+    margin-left: 36%;
+    background-color: rgb(21, 223, 163);
+
+} */
+
+.btn {
+    background-color: #3ca1e4;
+    color: #010101;
+    font-weight: bold;
+    /* padding: 10px; */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width:40%;
+    font-size: medium;
+    height: 50px;
+    margin-left: 30%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+    /* margin-left: 100px;++++++
+    margin-bottom: 20px; */
+}
+
+.btn:hover{
+
+    background-color: #3bb5da;
+
+}
+
+.lbd2{
+
+    /* border: 2px solid; */
+    height: 500px;
+    width: 40%;
+    margin-top: 5%;
+    background-color: #E6F2FF;
+    border-radius: 10%;
+    margin-bottom: 5%;
+    background-color: #93CAEE;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.rbd2{
+
+    border : 2px;
+    height : 500px;
+    width : 40%;
+    background-image: url("images/healing_journey.png");
+    background-size: cover;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 10% ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+
+}
+
+.limg2{
+
+    
+    height : 50%;
+    width : auto;     
+    display : flex;
+    justify-content: space-evenly;
+    
+
+}
+
+.lbd2 h2{
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+
+}
+
+/* .lbdr2 h3{
+
+    text-align: center;
+
+} */
+
+/* .btn{
+
+    margin-top: 20px;
+    margin-left: 36%;
+    background-color: rgb(21, 223, 163);
+
+} */
+
+.btn2 {
+    background-color: #3ca1e4;
+    color: #010101;
+    font-weight: bold;
+    /* padding: 10px; */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width:40%;
+    font-size: medium;
+    height: 50px;
+    margin-left: 30%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+    /* margin-left: 100px;
+    margin-bottom: 20px; */
+}
+
+.btn2:hover{
+
+    background-color: #3bb5da;
+
+}
+
+/* Footer styling */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #4E4E4F;
+    color: #fff;
+    padding: 20px; /* Reduced padding for a smaller height */
+    height: 200px; /* Set the height to 200px */
+}
+
+/* Column styling within the footer */
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+/* Heading within the footer */
+footer h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Links within the footer */
+footer a {
+    font-size: 18px;
+    text-decoration: none;
+    margin: 5px 0;
+    color: #ddd;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect on links */
+footer a:hover {
+    color: #fff;
+}
+
+/* Icons within the footer */
+footer .follow i {
+    color: #ddd;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+/* Additional styling for the follow section */
+.follow {
+    margin-bottom: 30px;
+}
+
+/* Section-p1 styling */
+.section-p1 {
+    background-color: #4E4E4F;
+}
+
+
+.img{
+
+    background-image: url('images/woman_field.png');
+    background-size: cover;
+
+}
+
+.lis2{
+
+    border:  2px solid black;
+    height: 500px;
+    width: auto;
+
+}
