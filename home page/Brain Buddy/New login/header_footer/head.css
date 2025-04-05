@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #3498db; /* Blue color */
+    height: 80px;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li {
+    padding: 20px;
+    position: relative;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    color: #ecf0f1; /* Lighter shade of white on hover */
+}
+
+.menu ul li ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    background-color: #3498db; /* Blue color for dropdown */
+    padding: 10px;
+    border: 1px solid #2980b9; /* Darker shade of blue for border */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 200px;
+}
+
+.menu ul li:hover ul {
+    display: block;
+}
+
+.menu ul li:hover > ul {
+    display: block;
+}
+
+.menu ul li ul li ul {
+    display: none !important;
+}
+
+.menu ul li ul li:hover ul {
+    display: block !important;
+    left: 100%;
+    top: 0;
+}
+
+.login-signup {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background-color: #2ecc71; /* Green color */
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login-signup:hover {
+    background-color: #27ae60; /* Darker shade of green on hover */
+}

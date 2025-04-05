@@ -1,0 +1,55 @@
+
+/* Footer styling */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: auto;
+    background-color: #4e4e4f;
+    height: 200px; /* Set the height to 200px */
+}
+
+/* Column styling within the footer */
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+/* Heading within the footer */
+footer h4 {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+/* Links within the footer */
+footer a {
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 0 8px 0;
+    color: #222;
+}
+
+/* Icons within the footer */
+footer .follow i {
+    color: #222;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+/* Icon size */
+.icon {
+    font-size: 30px;
+}
+
+/* Additional styling for the follow section */
+.follow {
+    margin-bottom: 45px;
+}
+
+/* Section-p1 styling */
+.section-p1 {
+    height: 200px;
+}

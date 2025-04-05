@@ -1,0 +1,244 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.logo img {
+  width: 85px;
+  height: auto;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  /*align-items:center;*/
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero-section {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero-section button {
+  background-color: white;
+  color: #4caf50;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-section button:hover {
+  background-color: black;
+  color: white;
+}
+
+.about-section {
+  background-color: #eaeaff;
+  text-align: center;
+  padding: 50px 0;
+  color: #333;
+}
+.about-section h2 {
+  font-size: 2.5rem; /* Increase font size for the heading */
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.2rem; /* Increase font size for the paragraph */
+  margin-bottom: 30px;
+}
+
+.services-section {
+  background-color: #e6f7ff;
+  text-align: center;
+  padding: 50px 0;
+}
+.service {
+  margin: 0 20px;
+}
+
+.services-section h2 {
+  font-size: 2.5rem; /* Increase font size for the heading */
+  margin-bottom: 20px;
+  color: #333; /* Set the heading color */
+}
+.service h3 {
+  font-size: 1.8rem; /* Increase font size for the service heading */
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 1.2rem; /* Increase font size for the service description */
+  color: #666; /* Set the description color */
+}
+.about-section .image-zoom img,
+.services-section .image-zoom img {
+  width: 80%;
+  max-width: 300px;
+  //height: auto;
+  height: 300px; /* Set the fixed height for the container */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px 0;
+}
+
+.about-section .image-zoom img:hover,
+.services-section .image-zoom img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/*.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}*/
+
+/* ... (previous CSS rules) ... */
+
+/*.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+.social-icons {
+    display: flex;
+    margin-right: 20px;
+}
+
+.social-icon {
+    margin: 0 10px;
+}
+
+.footer-info {
+    flex: 2;
+    text-align: left;
+}
+
+.footer-links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Add hover effect to links */
+/*.footer-links a:hover {
+    text-decoration: underline;
+}*/
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .footer-logo img {
+  width: 100px;
+  height: auto;
+} */
+
+.footer-content {
+  display: flex;
+  align-items: center;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #4caf50;
+}
+
+.social-icons {
+  margin-left: auto;
+}
+
+.social-icon {
+  margin: 0 10px;
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #4caf50;
+}
+
+.footer-info {
+  text-align: right;
+  margin-right: 5px;
+  /*flex: 1;*/
+}

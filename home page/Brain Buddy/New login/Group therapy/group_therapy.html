@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psychiatrist Appointment Form</title>
+  <link rel="stylesheet" href=".\group_therapy.css" /> 
+</head>
+<body>
+     <nav>
+        <div class="logo">
+          <img src=".\images\logo_hand_name.png" alt="Logo" />
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </nav> 
+<div class="apcontain"><table><tr>
+ <td class="aptab"> <div class="apimage">
+    <img src=".\front.jpg" alt=".\front.jpg">
+  </div></td>
+  <td  class="aptab2"><div id="title">
+    <h1>Embark on your path of healing with us
+    </h1>
+    <a href="#app">
+    <button type="button" style="margin-left: 0;">Start Now</button>
+    </a>
+  </div></td></tr>
+</table>
+</div>
+<div id="contact">
+  <p class="para">"If we start being honest about our pain, our anger, <br>
+    and our shortcomings instead of pretending they don’t exist,<br> 
+    then maybe we’ll leave the world a better place than we found it.<br>
+    We are not our trauma. We are not our brain chemistry. <br>
+    That’s part of who we are, but we’re so much more than that."</p>
+  </div>
+  
+<div id="app">
+  <h1 style="text-align:center">Book Appointment</h1>
+  <p style="text-align:center;font-style:italic;font-size: 30px;">“Self-care is not selfish, it’s necessary for good mental health."
+   <br> Take the first step to recovery by requesting an appointment.</p>
+<form id="appointmentForm">
+  <label for="patientName">Name:</label>
+  <input type="text" id="firstN" placeholder="Enter your first name" required>
+  <input type="text" id="lastN" placeholder="Enter your last name" required>
+
+  <label for="PCTime">Preferred Contact Time:</label>
+  <input type="radio" id="PCTime" name="time" value="9am-12pm">9am-12pm  
+  <input type="radio" id="PCTime" name="time" value="12pm-3pm">12pm-3pm  
+  <input type="radio" id="PCTime" name="time" value="3pm-5pm">3pm-5pm  
+
+
+  <label for="appointmentDate">Appointment Date:</label>
+  <input type="date" id="appointmentDate" required>
+  <table><tr>
+   <th> <label for="psy" id="preCL">Preferred Clinician</label></th>
+   <th><label for="pdt" id="preDT">Preferred Date & Time</label></th></tr>
+    <tr><td id="firrow"><select name="Preferred Clinician" id="PClinician">
+        <option value="">Preferred Clinician</option>
+        <option value="Dr.Hardi Raval">Dr.Hardi Raval</option>
+        <option value="Dr.Jui Patel">Dr.Jui Patel</option>
+        <option value="Dr.Janak Akhani">Dr.Janak Akhani</option>
+        <option value="Dr.Prakash Shah">Dr.Prakash Shah</option>
+        <option value="Dr.Vaibhav Joshi">Dr.Vaibhav Joshi</option>
+        <option value="Dr.Parth Vaishnav">Dr.Parth Vaishnav</option>
+        <option value="Dr.Anuja Joshi">Dr.Anuja Joshi</option>
+        <option value="Dr.Keyur D Panchal">Dr.Keyur D Panchal</option>
+    </select></td>
+
+    <!-- <label for="pdt">Preferred Date & Time</label> -->
+    <td id="secrow"><input type="text" id="padt" placeholder="Preferred Appointment Date & Time" required></td></tr>
+</table>
+
+  <label for="emaild">Email:</label>
+  <input type="email" id="emaild" required>
+
+  <label for="contactNumber">Contact Number:</label>
+  <input type="tel" id="contactNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" required>
+
+  <label for="message">Message</label>
+  <textarea id="message" placeholder="Message" rows="10" required></textarea>
+
+
+  <button type="button" onclick="submitForm()">Submit</button>
+</form>
+
+ <p> Disclaimer:Please refrain from sharing sensitive personal or medical information through this platform. For secure communication, consider using encrypted channels or contacting us directly.</p>
+  <div id="disc">
+   <footer>
+    <div class="container">
+      <div class="footer-content">
+        <!-- <div class="footer-logo">
+          <img src="./images/logo_hand_name.png" alt="Logo" />
+        </div> -->
+        <div class="footer-links">
+          <p>Monday - Friday:9am - 7pm<br>
+              Saturday:9am - 4pm<br>
+              Sunday:Closed</p>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>Contact Us: info@example.com<br>
+        123 Main Street, Cityville, State, 12345</p>
+      </div>
+      
+    </div>
+    <p>
+      Copyright © 2024 Brain Buddy | Privacy Policy | Office Disclosure Notice <br> Website by Beacon Media + Marketing.
+         </p>
+  </footer>
+</div>
+
+<script>
+  function submitForm() {
+    // You can add JavaScript logic here to handle the form submission
+    alert('Form submitted successfully!');
+  }
+</script>
+
+</body>
+</html>

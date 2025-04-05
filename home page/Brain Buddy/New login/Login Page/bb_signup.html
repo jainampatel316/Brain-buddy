@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign up Page</title>
+
+    <link rel="stylesheet" />
+  </head>
+
+  <link rel="stylesheet" href="bb_signup.css" />
+
+  <body>
+      
+    <nav>
+      <div class="logo"  ><img src="./images/logo_hand_name.png" alt="Logo"></div>
+      <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Login</a></li>
+      </ul>
+  </nav>
+
+    <main class="main" type>
+      <div class="signup">
+        <section>
+          <div class="center">
+            <div class="defpic">
+              <img src="./images/image.jpg" class="img" />
+            </div>
+
+            <div class="side">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Fisrt name"
+                required
+                maxlength="40"
+              />
+
+              <input
+                type="text"
+                name="Name"
+                placeholder="Last name"
+                required
+                maxlength="40"
+              />
+            </div>
+
+            <div class="side">
+              <input
+                type="tel"
+                name="contact"
+                placeholder="Contact number"
+                required
+                maxlength="10"
+              />
+              <input type="email" name="mail" placeholder="Email" required />
+            </div>
+
+            <div class="side">
+              <input
+                type="text"
+                name="address"
+                placeholder="Address"
+                required
+                maxlength="200"
+              />
+              <input
+                type="date"
+                name="dob"
+                placeholder="Date of birth "
+                required
+              />
+            </div>
+
+            <div class="side">
+              <select name="gender" id="sex">
+                <option value="" disabled selected>Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+                <option value="Not preferd to say">Not preferd to say</option>
+              </select required>
+            </div>
+
+            <form action="../Login Page/bb_login.html">
+              <div class="sub">
+                <button class="login_btn">Sign up</button>
+              </div>
+            </form>
+            
+<!-- 
+            <div class="dacc">
+              Don't have an account? <a href="#">sign up</a>
+            </div> -->
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+          <div class="footer-content">
+              <!-- <div class="footer-logo">
+                  <img src="./images/logo_hand_name.png" alt="Logo">
+              </div> -->
+              <div class="footer-links">
+                  <a href="#">Home</a>
+                  <a href="#">Services</a>
+                  <a href="#">About Us</a>
+                  <a href="#">Contact</a>
+              </div>
+              <div class="social-icons">
+                  <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+          <div class="footer-info">
+              <p>Contact Us: info@example.com</p><br>
+              <p>123 Main Street, Cityville, State, 12345</p>
+          </div>
+      </div>
+  </footer>
+  </body>
+</html>
